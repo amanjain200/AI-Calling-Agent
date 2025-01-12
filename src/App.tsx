@@ -12,7 +12,7 @@ function App() {
 
   
 
-  const sendToServer = async (text:String) => {
+  const sendToServer = async () => {
     if(textRef.current === '' || textRef.current.length <= 1){
       console.log('empty text');
       return;
@@ -90,7 +90,7 @@ function App() {
     if (recognition) {
       recognition.stop();
       setIsRecording(false);
-      sendToServer(textRef.current);
+      sendToServer();
       console.log("stopListening function");
       console.log("the text is" + textRef.current);
     }
