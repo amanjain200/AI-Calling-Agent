@@ -78,9 +78,6 @@ function App() {
     if (recognition) {
       recognition.start();
       setIsRecording(true);
-      setTimeout(() => {
-        stopListening();
-      }, 7000);
       console.log("starting to listen with " + textRef.current);
       console.log("startListening function");
     }
