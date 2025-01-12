@@ -10,7 +10,7 @@ function App() {
   const [callStarted, setCallStarted] = useState(false)
   const textRef = useRef('');
 
-  
+  const apiUrl = import.meta.env.VITE_BACKENDURL;
 
   const sendToServer = async () => {
     if(textRef.current === '' || textRef.current.length <= 1){
@@ -19,7 +19,7 @@ function App() {
     }
 
     const response = await axios.post(
-      '${process.env.BACKENDURL}', {prompt: textRef.current}, { responseType: "blob",
+      `${apiUrl}`, {prompt: textRef.current}, { responseType: "blob",
         withCredentials: true,
        });
     console.log("response: " + response);
