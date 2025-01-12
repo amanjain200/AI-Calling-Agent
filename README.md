@@ -102,6 +102,8 @@ Please refer to the [Backend Repository's README](https://github.com/Chinmayadas
    - The solution is designed as a web-based agent and does not currently integrate with phone systems.  
 3. **Speech-to-Text (STT) Capabilities**:  
    - While the browser Web Speech API provides decent STT performance, more advanced STT systems are required for deployment in phone-based agents to ensure better accuracy and versatility.  
+4. **API Errors**: 
+   - The Smallest.ai TTS API occasionally encounters errors that cannot be consistently handled due to incomplete or insufficient documentation of the API, affecting reliability in some scenarios.
 
 #### **Future Enhancements**  
 1. **Full Integration with Phone Agents**:  
@@ -167,3 +169,14 @@ In its phone agent version, the architecture will be extended to include additio
 
 This planned enhancement aims to transform the system into a comprehensive, multi-functional phone agent suitable for a variety of industries, from sales to customer support and beyond.  
 
+
+### **Demo Video**
+Watch the demo video here: [Demo Video](https://youtu.be/-dWEOUKdiDc?si=QoZTWI78bfPz1oVZ)
+
+Or view it directly below:  
+[![Demo Video](https://img.youtube.com/vi/-dWEOUKdiDc/0.jpg)](https://youtu.be/-dWEOUKdiDc?si=QoZTWI78bfPz1oVZ)
+
+
+### **Team**
+#### Aman Jain
+#### Chinmaya Kumar Das
