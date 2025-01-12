@@ -2,8 +2,6 @@ import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import axios from 'axios';
 
-
-
 function App() {
 
   // const [agentResponse, setAgentResponse] = useState('');
@@ -11,6 +9,7 @@ function App() {
   const [recognition, setRecognition] = useState<any>(null);
   const [callStarted, setCallStarted] = useState(false)
   const textRef = useRef('');
+
   
 
   const sendToServer = async (text:String) => {
@@ -20,7 +19,7 @@ function App() {
     }
 
     const response = await axios.post(
-      'http://localhost:5000/api/v1/agent/call-agent', {prompt: textRef.current}, { responseType: "blob",
+      '${process.env.BACKENDURL}', {prompt: textRef.current}, { responseType: "blob",
         withCredentials: true,
        });
     console.log("response: " + response);
