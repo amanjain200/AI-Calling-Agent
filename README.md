@@ -38,9 +38,9 @@
 - **Ultra-Realistic Voice Output**:  
   Employs **Smallest.ai's lightning-fast model** for Text-to-Speech (TTS) in the backend, delivering highly realistic voice output with minimal delay.  
 - **Advanced Query Processing**:  
-  Powered by the GPT-4 API to generate accurate, context-aware responses for user queries, commands, or interactions.  
+  Powered by the GPT-4o API to generate accurate, context-aware responses for user queries, commands, or interactions.  
 - **Contextual Conversations**:  
-  Maintains a history of interactions between users and GPT-4 in the prompt, enabling contextual and realistic dialogues.  
+  Maintains a history of interactions between users and GPT-4o in the prompt, enabling contextual and realistic dialogues.  
 - **Scalable and Adaptive**:  
   Designed to handle a wide range of use cases with minimal modifications, including customer support, sales, and virtual assistants.  
 - **User-Centric**:  
@@ -89,14 +89,14 @@ Please refer to the [Backend Repository's README](https://github.com/Chinmayadas
 
 #### **Other Technologies**  
 - **Browser Web Speech Feature**: For real-time Speech-to-Text (SST).  
-- **GPT-4 API**: Used for generating responses based on user inputs.  
+- **GPT-4o API**: Used for generating responses based on user inputs.  
 - **Smallest.ai API**: Lightning-fast TTS model for realistic voice output.  
 
 ### **Limitations and Future Enhancements**  
 
 #### **Limitations**  
 1. **API Free Tier**:  
-   - Currently, the project utilizes the free tier of Smallest.ai and GPT-4 APIs, which may have limitations in terms of response speed, concurrency, and daily usage caps.  
+   - Currently, the project utilizes the free tier of Smallest.ai and GPT-4o APIs, which may have limitations in terms of response speed, concurrency, and daily usage caps.  
    - Deploying this project for real-world applications would require upgrading to paid plans to handle larger workloads effectively.  
 2. **Limited Scope**:  
    - The solution is designed as a web-based agent and does not currently integrate with phone systems.  
@@ -128,16 +128,16 @@ The architecture of the AI-Calling Agent is designed for modularity and real-tim
 
 2. **Backend (Node + Express)**:  
    - Handles incoming queries from the frontend.  
-   - Uses **GPT-4 API** for generating intelligent, context-aware responses.  
-   - Employs **Smallest.ai API** to convert the GPT-4 response into ultra-realistic speech (Text-to-Speech).  
+   - Uses **GPT-4o API** for generating intelligent, context-aware responses.  
+   - Employs **Smallest.ai API** to convert the GPT-4o response into ultra-realistic speech (Text-to-Speech).  
 
 3. **APIs and Models**:  
    - **Web Speech API**: Converts user speech into text on the frontend.  
-   - **GPT-4 API**: Provides contextual responses to user queries.  
+   - **GPT-4o API**: Provides contextual responses to user queries.  
    - **Smallest.ai API**: Produces high-quality, real-time TTS output.  
 
 4. **Data Flow**:  
-   - User speech → Frontend (STT) → Backend (query processing) → GPT-4 → Backend (TTS conversion) → Frontend (voice response).  
+   - User speech → Frontend (STT) → Backend (query processing) → GPT-4o → Backend (TTS conversion) → Frontend (voice response).  
 
 This modular architecture ensures flexibility, allowing for easy integration of additional workflows or advanced models in the future.
 
